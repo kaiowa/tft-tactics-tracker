@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link href="../css/estilos.css" type="text/css" rel="stylesheet"></link>
+   
+</head>
+  <body>
+<div class="user">
+    <div class="info">
+        <div class="logo"><img src="//ddragon.leagueoflegends.com/cdn/10.10.3208608/img/profileicon/898.png"></div>
+        <div class="name">
+            <p class="username"><%=user%></p>
+            <div class="points">
+                <p class="division"></p>
+                <p class="leaguepoints"></p>
+            </div>
+            <div class="meter">
+                <span style="width: 25%"></span>
+            </div>
+            <div class="winnings">
+                <p class="text-meter"></p>
+            </div>
+        </div>
+        
+    </div>
+    
+   
+    
+    
+</div>
+<div class="stats">
+
+</div>
+<input type="hidden"  id="username" user="<%=user%>">
+    <input type="hidden" id="account" value="<%=userJson%>">
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../jquery.min.js"></script>
+    <script src="../main.js"></script>
+  
+</body>
+</html>
